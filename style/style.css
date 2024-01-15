@@ -55,8 +55,8 @@ nav ul li{
 .banner-section{
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(../Images/Group\ 13\ \(1\)\ \(1\).png);
     margin: 0 auto;
-    max-width: 100%;
-    height: 600px;
+    max-width:992px;
+   height:550px;
     border-radius: 15px;
     background-repeat: no-repeat;
     background-size:cover;
@@ -66,8 +66,8 @@ nav ul li{
     padding:70px 20px 20px 20px;
 }
 .banner-input{
-    display: inline-flex;
-    margin: 30px 90px;
+    display:flex;
+    margin: 0 auto;
     gap: 20px;
 
 }
@@ -115,14 +115,120 @@ nav ul li{
     padding: 8px 16px;
 }
 
+/* section popular tour */
+.popular-tour{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.popular-tour-details{
+    /* width: 450px; */
+    color: rgba(19, 19, 24, 0.70);
+    
+}
+.popular-tour-details ul{
+    padding-left: 25px;
+}
+.tour-head{
+    color: #131318;
+    text-align: center;
+    font-weight: 700;
+}
+.tour-details{
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+}
+#tour-image{
+   height: 300px;
+   width: 100%;
+}
 
+/* destination */
+.desti-h2{
+    color: #131318;
+    text-align: center;
+    /* font-size: 40px; */
+    font-weight: 600;
+}
+
+.desti-p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.destination-image{
+    display: grid;
+    gap: 25px;
+    justify-content: space-between;
+    grid-template-areas:
+    "maldives indonessia indonessia"
+    "srilanka america kashmir "
+    "bangladesh bandorban bandorban"
+    ;
+}
+.destini-img7{
+    width: 100%;
+}
+/* destini images */
+.one{
+    grid-area: maldives;
+}
+.two{
+    grid-area: indonessia;
+}
+.three{
+    grid-area: srilanka;
+}
+.four{
+    grid-area: america;
+}
+/* .five img{
+    width: 100%;
+} */
+.five{
+    grid-area: kashmir;
+}
+.six{
+    grid-area: bangladesh;
+}
+.seven{
+    grid-area: bandorban;
+}
+
+/* choose section */
+
+.choose-section h2{
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+}
+.choose-section p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-weight: 400;
+}
+.choose-description{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.div-three{
+    width: 350px;
+    height: 200px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 10px;
+}
 
 
 /* responsive */
 /* for mobile */
 @media screen and (max-width:600px) {
-    .haeder-top{
-        
+    .haeder{
+        padding: 10px;
     }
     ul li{
         display: none;
@@ -131,11 +237,38 @@ nav ul li{
         display: block;
     }
     .banner-section img{
-        width: 100vw;
-        height: 100%;
+        width: 570px;
     }
     .banner-input{
         flex-direction: column;
         width: 100%;
+        padding: 20px;
+    }
+    .popular-tour{
+        flex-direction: column;
+    }
+    .destination{
+        display: grid;
+    }
+    .destini-img7{
+        width: 325px;
+        height: 150px;
+    }
+    .destination-image{
+        grid-template-areas: 
+        "maldives"
+        "indonessia"
+        "srilanka"
+        "america"
+        "kashmir"
+        "bangladesh"
+        "bandorban";
+    }
+
+    /* desc */
+    .choose-description{
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 5px;
     }
 }
