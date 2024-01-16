@@ -659,7 +659,8 @@ hr{
     .newsletter-form {
         height: 425px;
         border-radius: 16px;
-        padding: 0;
+        padding: 10px;
+        margin: 0 auto;
         border: 1px solid #FF5400;
     }
     .newsletter-filed input {
