@@ -381,7 +381,7 @@ nav ul li a{
     cursor: pointer;
 }
 .second-deals-container{
-    background-image: url('../Images/Group\ 40.png') !important;
+    background-image: url('../Images/Group\ 40.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -683,7 +683,8 @@ hr{
     .newsletter-img img{
         margin-top: 40px;
         width: 100%;
-    }.travel-striker{
+    }
+    .travel-striker{
         position: relative;
         bottom: 115px;
         left: 70px;
