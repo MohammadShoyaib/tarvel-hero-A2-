@@ -11,7 +11,7 @@ body {
     font-family: "Mulish", sans-serif;
 
 }
-/* header css start from here */
+/* header */
 header {
     margin: 52px 127px 49px 127px;
 }
@@ -53,7 +53,7 @@ nav ul li a{
 .bars{
     display: none;
 }
-/* end here header nav css from here and start the banner css */
+/* banner  */
 .banner-container{
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
     background-repeat: no-repeat;
@@ -111,6 +111,8 @@ nav ul li a{
 }
 .banner-input-filed i {
     margin-right: 12px;
+    width: 1.5px;
+    color: rgba(19, 19, 24, 0.70);
 }
 /* popular section  */
 .popular-container{
@@ -141,8 +143,8 @@ nav ul li a{
     background-color: #FF5400;
     padding: 16px 20px;
     color: #fff;
-    font-size: 14px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 600;
     border: 0;
     border-radius: 8px;
     letter-spacing: 2px;
@@ -491,6 +493,9 @@ hr{
     margin-top: 50px;
     margin-bottom: 12px;
 }
+.fa-solid{
+    margin-right: 2px;
+}
 
 
 /*  */
@@ -512,7 +517,7 @@ hr{
     .nav-logo h1{
         font-size: 21px;
     }
-    /* nav css end from  here and banner css start from here */
+    /* banner */
     .banner-content{
         margin-top: 25px;
     }
@@ -549,7 +554,7 @@ hr{
     .popular-container img{
         margin-top: 24px;
     }
-    /* end the popular section css and start destination css */
+    /*  destination  */
     .destination-container{
         margin: 20px 20px 20px 20px;
     }
@@ -621,7 +626,7 @@ hr{
         margin-right: 56px;
     }
 
-    .second-main-container{
+    .second-main-container,.deal-main-container{
         width: 303px;
         height: 370px;
         float: right;
@@ -654,6 +659,7 @@ hr{
     .newsletter-form {
         height: 425px;
         border-radius: 16px;
+        padding: 0;
         border: 1px solid #FF5400;
     }
     .newsletter-filed input {
@@ -667,6 +673,10 @@ hr{
     .newsletter-img img{
         margin-top: 40px;
         width: 100%;
+    }.travel-striker{
+        position: relative;
+        bottom: 125px;
+        left: 105px;
     }
     footer{
         margin: 100px 20px 20px 20px;
