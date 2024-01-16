@@ -2,273 +2,514 @@
 /* font-familly */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
 
-/* universal-style */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mulish', sans-serif;
 }
-/* header section */
-header{
-    margin: 25px;
+body { 
+    font-family: "Mulish", sans-serif;
+
 }
-.haeder-top{
+/* header css start from here */
+header {
+    margin: 52px 127px 49px 127px;
+}
+.header-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-logo{
+.nav-logo{
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
-.header-logo h4{
+.nav-logo h1{
+    margin-left: 7px;
+    font-size: 36px;
+    font-weight: 800;
     color: #131318;
-    font-size: 30px;
-    font-weight: 800;
 }
-/* common style */
-span{
-    color: #FF5400;;
-    font-size: 30px;
-    font-weight: 800;
+.nav-logo span {
+    color: #FF5400;
 }
-.header-nav{
-
-}
-.header-nav nav ul{
+nav ul{
     display: flex;
-    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
 }
 nav ul li{
     list-style-type: none;
-    color:#424247;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 400;
 }
-#fa-bar{
+nav ul li a{
+    margin-right: 44px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #424247;
+}
+.bars{
     display: none;
 }
-/* banner section */
-.banner-section{
-    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(../Images/Group\ 13\ \(1\)\ \(1\).png);
-    margin: 0 auto;
-    max-width:992px;
-   height:550px;
-    border-radius: 15px;
+/* end here header nav css from here and start the banner css */
+.banner-container{
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
     background-repeat: no-repeat;
-    background-size:cover;
-}
-.banner-content{
-    margin: 0 auto;
-    padding:70px 20px 20px 20px;
-}
-.banner-input{
-    display:flex;
-    margin: 0 auto;
-    gap: 20px;
-
-}
-.banner-title{
-    color: #FFF;
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
-}
-.banner-description{
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-}
-.banner-input-three{
-    max-width: 15.2rem;
-    height: 2.5rem;
-    border: 0;
-    padding: 8px 16px;
-    color: rgba(19, 19, 24, 0.50);
-    text-align: left;
-    font-size: 10px;
-    font-weight: 400;
-    border-radius: 8px;
-    background: #FFF;
-}
-/* #angle{
-    position: relative;
+    background-size: cover;
+    width: 900px;
+    height: 500px;
+    border-radius: 16px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    right: 40px;
-    top: 15px;
-    color: rgba(19, 19, 24, 0.7);
-} */
-.btn{
-    max-width: 10.2rem;
-    height: 2.5rem;
-    border: 0;
-    border-radius: 8px;
-    background: #FF5400;
-    color: #FFF;
     text-align: center;
-    font-size: 10px;
-    font-weight: 500;
-    padding: 8px 16px;
 }
-
-/* section popular tour */
-.popular-tour{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.banner-content h1{
+    font-size: 64px;
+    font-weight: 800;
+    color: #fff;
 }
-.popular-tour-details{
-    /* width: 450px; */
-    color: rgba(19, 19, 24, 0.70);
-    
-}
-.popular-tour-details ul{
-    padding-left: 25px;
-}
-.tour-head{
-    color: #131318;
-    text-align: center;
-    font-weight: 700;
-}
-.tour-details{
-    color: rgba(19, 19, 24, 0.70);
-    font-weight: 400;
-}
-#tour-image{
-   height: 300px;
-   width: 100%;
-}
-
-/* destination */
-.desti-h2{
-    color: #131318;
-    text-align: center;
-    /* font-size: 40px; */
-    font-weight: 600;
-}
-
-.desti-p{
-    color: rgba(19, 19, 24, 0.70);
-    text-align: center;
+.banner-content p{
     font-size: 16px;
     font-weight: 400;
+    color: #fff;
+    margin-top: 24px;
 }
-.destination-image{
-    display: grid;
-    gap: 25px;
-    justify-content: space-between;
-    grid-template-areas:
-    "maldives indonessia indonessia"
-    "srilanka america kashmir "
-    "bangladesh bandorban bandorban"
-    ;
+.banner-input-filed {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 64px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 12px;
+    border-radius: 8px;
 }
-.destini-img7{
-    width: 100%;
+.banner-filed input, select {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    border: 0;
 }
-/* destini images */
-.one{
-    grid-area: maldives;
+.banner-filed input::placeholder{
+    margin-left: 10px;
 }
-.two{
-    grid-area: indonessia;
+.banner-filed input, select:focus{
+    outline: none;
 }
-.three{
-    grid-area: srilanka;
+.banner-input-filed button{
+    background-color: #FF5400;
+    padding: 16px 23px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
 }
-.four{
-    grid-area: america;
+.banner-input-filed i {
+    margin-right: 12px;
 }
-/* .five img{
-    width: 100%;
-} */
-.five{
-    grid-area: kashmir;
-}
-.six{
-    grid-area: bangladesh;
-}
-.seven{
-    grid-area: bandorban;
-}
-
-/* choose section */
-
-.choose-section h2{
-    color: #131318;
-    text-align: center;
-    font-family: Mulish;
-}
-.choose-section p{
-    color: rgba(19, 19, 24, 0.70);
-    text-align: center;
-    font-weight: 400;
-}
-.choose-description{
+/* popular section  */
+.popular-container{
+    margin: 100px 127px 100px 127px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
-.div-three{
-    width: 350px;
-    height: 200px;
+.popular-container img{
+    width: 100%;
+}
+.popular-content {
+    margin-right: 20px;
+}
+.popular-content h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 24px;
+}
+.popular-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.70);
+    margin-bottom: 24px;
+}
+.popular-content button {
+    background-color: #FF5400;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    border: 0;
+    border-radius: 8px;
+    letter-spacing: 2px;
+}
+/* destination css */
+.destination-container{
+    margin: 0px 127px 100px 127px;
+}
+.destination-content{
+    width: 643px;
+    margin: 0 auto;
+    text-align: center;
+}
+.destination-content h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: #131318;
+}
+.destination-content p{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.70);
+}
+.first-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.destination-img {
+    position: relative;
+}
+.destination-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.destination-title h3{
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+}
+.destination-img img {
+    width: 100%;
+    height: 286px;
+}
+.second-img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin: 24px 0px 24px 0px;
+}
+.third-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.destination-last-img{
+    width: 673px !important;
+}
+/* why choose us section css*/
+.choose-container{
+    margin: 0px 127px 0px 127px;
+}
+.choose-content{
+    text-align: center;
+}
+.choose-content h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 20px;
+}
+.choose-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.70);
+    width: 643px;
+    margin: 0 auto;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+.box h1{
+    font-size: 24px;
+    font-weight: 800;
+    color: #131318;
+}
+.box p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #5A5A5D;
+}
+.box{
+    padding: 32px;
+}
+.box-1{
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
-    padding: 10px;
+}
+.box-2{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.box-3{
+    position: relative;
+    left: 250px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+
+}
+    /* the deals & discount section*/
+.deals-container{
+    margin: 100px 127px 100px 127px;
+}
+.deals-content{
+    text-align: center;
+}
+.deals-content h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: #131318;
+}
+.deals-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.70);
+    margin: 20px 0px 20px 0px;
+}
+.first-deals-container{
+    background-image: url('../Images/Group\ 39.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    
+}
+.deal-main-container{
+    width: 579px;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    float: right;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    margin-right: 56px;
 }
 
+.deals-details{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+.deals-details div{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.deals-details div i{
+    color: #FF5400;
+}
+.deals-details div > p{
+    margin-left: 12px;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+}
 
-/* responsive */
-/* for mobile */
-@media screen and (max-width:600px) {
-    .haeder{
-        padding: 10px;
+.bottom-content{
+    margin: 50px;
+}
+.bottom-content h1{
+    font-size: 24px;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 16px;
+}
+.bottom-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #5A5A5D;
+    margin-bottom: 16px;
+}
+.bottom-content h3{
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+.bottom-content button {
+    background-color: #FF5400;
+    padding: 16px 23px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+.second-deals-container{
+    background-image: url('../Images/Group\ 40.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.second-main-container {
+    width: 579px;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    float: left;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    margin-left: 56px;
+
+}
+.deals-container button{
+    background-color: #FF5400;
+    padding: 16px 23px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    margin: 0 auto;
+    align-items: center;
+    align-self: center;
+}
+/*  */
+/* Responsive for mobile css start from here */
+@media screen and (max-width: 600px) {
+    header {
+        margin: 20px 20px 20px 20px;
     }
-    ul li{
+    nav{
         display: none;
     }
-    #fa-bar{
+    .bars {
         display: block;
+        text-decoration: none;
+        color: #424247;
+        width: 25px;
+        height: 24px;
     }
-    .banner-section img{
-        width: 570px;
+    .nav-logo h1{
+        font-size: 21px;
     }
-    .banner-input{
+    /* nav css end from  here and banner css start from here */
+    .banner-content{
+        margin-top: 25px;
+    }
+    .banner-content h1{
+        font-size: 22px;
+    }
+    .banner-content p{
+        width: 304px;
+        margin: 0 auto;
+    }
+    .banner-input-filed {
         flex-direction: column;
-        width: 100%;
-        padding: 20px;
+        gap: 16px;
+        margin-bottom: 32px;
+        background: rgba(255, 255, 255, 0.30);
+        padding: 12px;
+        border-radius: 8px;
     }
-    .popular-tour{
+    .banner-filed input, select {
+        width: 287px;
+    }
+    .banner-input-filed button{
+        width: 287px;
+        text-align: center;
+    }
+    /*popular tours section */
+
+    .popular-container{
+        margin: 24px 20px 20px 20px;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
-    .destination{
+    .popular-container img{
+        margin-top: 24px;
+    }
+    /* end the popular section css and start destination css */
+    .destination-container{
+        margin: 20px 20px 20px 20px;
+    }
+    .first-img{
         display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px;
     }
-    .destini-img7{
-        width: 325px;
-        height: 150px;
+    .destination-content{
+        width: 309px;
+        margin-top: 20px;
     }
-    .destination-image{
-        grid-template-areas: 
-        "maldives"
-        "indonessia"
-        "srilanka"
-        "america"
-        "kashmir"
-        "bangladesh"
-        "bandorban";
+    .destination-content h1{
+        font-size: 20px;
+    }
+    .destination-content p{
+        font-size: 14px;
+    }
+    .second-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .third-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .destination-last-img{
+        width: 100% !important;
+    }
+    /* why choose us section css */
+    .choose-container{
+        margin: 20px;
+    }
+    .choose-content h1{
+        font-size: 20px;
+    }
+    .choose-content p{
+        font-size: 14px;
+        width: 309px;
+    }
+    .box-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box h1{
+        font-size: 20px;
+    }
+    .box p{
+        font-size: 14px;
+    }
+    .box-3{
+        position: relative;
+        left: 0;
+    }
+    /*deals & discount section css */
+    .deals-container{
+        margin: 20px;
+    }
+    .deals-content h1{
+        font-size: 20px;
+    }
+    .deal-main-container{
+        width: 303px;
+        height: 297px;
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        float: right;
+        margin-top: 56px;
+        margin-bottom: 56px;
+        margin-right: 56px;
     }
 
-    /* desc */
-    .choose-description{
-        flex-direction: column;
-        margin: 0 auto;
-        padding: 5px;
-    }
-}
+
+}           
